@@ -42,7 +42,7 @@ const Card = ({ title, description, imgSrc, href, technologies, responsibilities
           {description}
         </p>
         {responsibilities && responsibilities.length > 0 && (
-          <ul className="list-none mb-3 text-gray-500 dark:text-gray-400">
+          <ul className="mb-3 list-none text-gray-500 dark:text-gray-400">
             {responsibilities.map((item, index) => (
               <li key={index} className="flex items-start">
                 • {item}
@@ -51,7 +51,7 @@ const Card = ({ title, description, imgSrc, href, technologies, responsibilities
           </ul>
         )}
         {technologies && (
-          <div className="flex flex-wrap gap-2 mb-3">
+          <div className="mb-3 flex flex-wrap gap-2">
             {technologies.map((tech) => (
               <span
                 key={tech}

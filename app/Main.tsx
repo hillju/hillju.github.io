@@ -46,24 +46,23 @@ const socialLinks = [
   { href: siteMetadata.linkedin ?? '', label: 'LinkedIn', icon: '→' },
 ]
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-6 pt-6 pb-8 md:space-y-8">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+          <h1 className="leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14 dark:text-gray-100">
             Software Engineer | Systems (Thinker?)
           </h1>
           <div className="text-lg leading-8 text-gray-500 dark:text-gray-400">
             <p className="mb-4">
-              I'm Justin, a seasoned software engineer based in Colorado, with nearly a decade of experience solving complex problems. From architecting secure microservices to
-              crafting tools that boost developer productivity, I bring a methodical approach and a passion for impactful engineering.
+              I'm Justin, a seasoned software engineer based in Colorado, with nearly a decade of experience solving complex problems. From architecting secure microservices to crafting tools that boost developer productivity, I bring a methodical approach and a passion for impactful engineering.
             </p>
           </div>
         </div>
 
         <div className="py-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
             Connect with me
           </h2>
           <div className="flex space-x-4">
