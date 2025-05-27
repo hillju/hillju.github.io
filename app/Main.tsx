@@ -42,8 +42,8 @@ export default function Home({ posts }) {
 
 // New landing page code
 const socialLinks = [
-  { href: siteMetadata.github, label: 'GitHub', icon: '→' },
-  { href: siteMetadata.linkedin, label: 'LinkedIn', icon: '→' },
+  { href: siteMetadata.github ?? '', label: 'GitHub', icon: '→' },
+  { href: siteMetadata.linkedin ?? '', label: 'LinkedIn', icon: '→' },
 ]
 
 export default function Home() {
